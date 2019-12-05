@@ -1,8 +1,8 @@
 {
 	"scripts": {
-		"devel": "ts-node-dev app.ts",
-		"start": "ts-node app.ts",
-		"build": "webpack"
+		"dev": "ts-node-dev app.ts",
+		"build": "webpack",
+		"start": "NODE_ENV=production ts-node app.ts"
 	},
 	"dependencies": {
 		"cookie-parser": "^1.4.4",
