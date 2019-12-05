@@ -7,6 +7,7 @@ import { AddressInfo } from 'net';
 import * as path from 'path';
 import * as webpack from 'webpack';
 import * as webpack_dev_middleware from 'webpack-dev-middleware';
+import * as webpack_hot_middleware from 'webpack-hot-middleware';
 
 import webpackConfig from '../webpack.config';
 import errorHandler from './errorHandler';
@@ -29,6 +30,7 @@ if ( process.env.NODE_ENV === 'development' ) {
 	app.use( webpack_dev_middleware( compiler, {
 		publicPath: webpackConfig.output.publicPath
 	} ) );
+	app.use( webpack_hot_middleware( compiler ) );
 }
 
 app.use( express.static( path.join( __basedir, 'public' ) ) );

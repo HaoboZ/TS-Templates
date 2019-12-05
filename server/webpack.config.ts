@@ -4,7 +4,8 @@ import * as webpack from 'webpack';
 
 export default {
 	entry:        [
-		path.join( __dirname, '..', 'client', 'src', 'index.ts' )
+		'webpack-hot-middleware/client',
+		path.join( __dirname, '..', 'client', 'app.tsx' )
 	],
 	output:       {
 		path:       path.join( __dirname, '..', 'client', 'public', 'build' ),
@@ -37,6 +38,7 @@ export default {
 	},
 	plugins:      [ new webpack.HotModuleReplacementPlugin() ],
 	resolve:      {
+		alias:      { 'react-dom': '@hot-loader/react-dom' },
 		extensions: [ '.js', '.jsx', '.ts', '.tsx', '.css', '.less' ]
 	},
 	optimization: {
