@@ -1,6 +1,9 @@
 {
 	"include": [
-		"src"
+		"server.ts"
+	],
+	"exclude": [
+		"node_modules"
 	],
 	/* Basic Options */
 	"compilerOptions": {
@@ -11,11 +14,11 @@
 		/* Specify library files to be included in the compilation. */
 		//		"lib": [],
 		/* Allow javascript files to be compiled. */
-		"allowJs": true,
+		//		"allowJs": true,
 		/* Report errors in .js files. */
-		"checkJs": true,
+		//		"checkJs": true,
 		/* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
-		"jsx": "react",
+		//		"jsx": "react",
 		/* Generates corresponding '.d.ts' file. */
 		//		"declaration": true,
 		/* Generates corresponding '.map' file. */
@@ -23,9 +26,9 @@
 		/* Skip type checking of declaration files. */
 		"skipLibCheck": true,
 		/* Concatenate and emit output to single file. */
-		//		"outFile": "public/build/bundle.js",
+		//		"outFile": "./",
 		/* Redirect output structure to the directory. */
-		"outDir": "public/build",
+		"outDir": "build",
 		/* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
 		//		"rootDir": "./",
 		/* Do not emit comments to output. */
@@ -51,7 +54,7 @@
 		/* Enable strict checking of property initialization in classes. */
 		//		"strictPropertyInitialization": true,
 		/* Raise error on 'this' expressions with an implied 'any' type. */
-		"noImplicitThis": false,
+		//		"noImplicitThis": true,
 		/* Parse in strict mode and emit "use strict" for each source file. */
 		//		"alwaysStrict": true,
 		
@@ -81,7 +84,7 @@
 		/* Type declaration files to be included in compilation. */
 		//		"types": [],
 		/* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
-		"allowSyntheticDefaultImports": true,
+		//		"allowSyntheticDefaultImports": true,
 		/* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
 		//		"esModuleInterop": true,
 		/* Do not resolve the real path of symlinks. */
@@ -93,7 +96,7 @@
 		/* Specify the location where debugger should locate map files instead of generated locations. */
 		//		"mapRoot": "./",
 		/* Emit a single file with source maps instead of having a separate file. */
-		"inlineSourceMap": true,
+		//		"inlineSourceMap": true,
 		/* Emit the source alongside the sourcemaps within a single file; requires '--inlineSourceMap' or '--sourceMap' to be set. */
 		//		"inlineSources": true,
 		
