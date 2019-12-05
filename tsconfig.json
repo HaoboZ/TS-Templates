@@ -1,7 +1,10 @@
 {
 	"include": [
-		"src"
+		"App.ts*"
 	],
+	//	"exclude": [
+	//		"node_modules"
+	//	],
 	/* Basic Options */
 	"compilerOptions": {
 		/* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. */
@@ -15,7 +18,7 @@
 		/* Report errors in .js files. */
 		"checkJs": true,
 		/* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
-		"jsx": "react",
+		"jsx": "react-native",
 		/* Generates corresponding '.d.ts' file. */
 		//		"declaration": true,
 		/* Generates corresponding '.map' file. */
@@ -23,9 +26,9 @@
 		/* Skip type checking of declaration files. */
 		"skipLibCheck": true,
 		/* Concatenate and emit output to single file. */
-		//		"outFile": "public/build/bundle.js",
+		//		"outFile": "./",
 		/* Redirect output structure to the directory. */
-		"outDir": "public/build",
+		//		"outDir": "build/dest",
 		/* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
 		//		"rootDir": "./",
 		/* Do not emit comments to output. */
@@ -33,7 +36,7 @@
 		/* Do not emit outputs. */
 		//		"noEmit": true,
 		/* Import emit helpers from 'tslib'. */
-		//		"importHelpers": true,
+		"importHelpers": true,
 		// Provide full support for iterables in 'for-of', spread, and destructuring when targeting 'ES5' or 'ES3'. */
 		"downlevelIteration": true,
 		/* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
@@ -51,7 +54,7 @@
 		/* Enable strict checking of property initialization in classes. */
 		//		"strictPropertyInitialization": true,
 		/* Raise error on 'this' expressions with an implied 'any' type. */
-		"noImplicitThis": false,
+		//		"noImplicitThis": true,
 		/* Parse in strict mode and emit "use strict" for each source file. */
 		//		"alwaysStrict": true,
 		
@@ -68,8 +71,6 @@
 		/* Module Resolution Options */
 		/* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
 		"moduleResolution": "node",
-		/* Handles JSON files */
-		"resolveJsonModule": true,
 		/* Base directory to resolve non-absolute module names. */
 		//		"baseUrl": "./",
 		/* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
@@ -81,7 +82,7 @@
 		/* Type declaration files to be included in compilation. */
 		//		"types": [],
 		/* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
-		"allowSyntheticDefaultImports": true,
+		//		"allowSyntheticDefaultImports": true,
 		/* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
 		//		"esModuleInterop": true,
 		/* Do not resolve the real path of symlinks. */
@@ -93,7 +94,7 @@
 		/* Specify the location where debugger should locate map files instead of generated locations. */
 		//		"mapRoot": "./",
 		/* Emit a single file with source maps instead of having a separate file. */
-		"inlineSourceMap": true,
+		//		"inlineSourceMap": true,
 		/* Emit the source alongside the sourcemaps within a single file; requires '--inlineSourceMap' or '--sourceMap' to be set. */
 		//		"inlineSources": true,
 		
