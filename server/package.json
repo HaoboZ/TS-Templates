@@ -1,9 +1,8 @@
 {
-	"name": "server",
-	"version": "0.0.0",
-	"private": true,
 	"scripts": {
-		"server": "ts-node-dev app.ts"
+		"devel": "ts-node-dev app.ts",
+		"start": "ts-node app.ts",
+		"build": "webpack"
 	},
 	"dependencies": {
 		"cookie-parser": "^1.4.4",
@@ -19,7 +18,6 @@
 		"@babel/core": "^7.7.4",
 		"@babel/plugin-proposal-decorators": "^7.7.4",
 		"@babel/preset-env": "^7.7.4",
-		"@babel/preset-react": "^7.7.4",
 		"@babel/preset-typescript": "^7.7.4",
 		"@types/cookie-parser": "^1.4.2",
 		"@types/debug": "^4.1.5",

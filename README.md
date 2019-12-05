@@ -1,6 +1,6 @@
-# TS Phaser
+# TS Templates
 
-Basic web starter with typescript.
+Basic web starter with TypeScript.
 
 ## Install
 
@@ -8,5 +8,5 @@ Basic web starter with typescript.
 0. `npm install`
 0. `cd ../server`
 0. `npm install`
-0. `npm run debug`
+0. `npm run devel`
 0. go to localhost

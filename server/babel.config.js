@@ -8,7 +8,6 @@ module.exports = api => {
 			'@babel/preset-typescript'
 		],
 		'plugins': [
-			'react-hot-loader/babel',
 			[
 				'@babel/plugin-proposal-decorators',
 				{
