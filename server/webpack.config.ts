@@ -21,25 +21,19 @@ export default {
 				loader: [ 'babel-loader' ]
 			},
 			{
-				test:   /\.less$/,
-				loader: [ 'style-loader', 'css-loader', 'less-loader' ]
-			},
-			{
 				test:   /\.css$/,
 				loader: [ 'style-loader', 'css-loader' ]
 			}
 		]
 	},
 	externals:    {
-		'react':       'React',
-		'react-dom':   'ReactDOM',
-		'redux':       'Redux',
-		'react-redux': 'ReactRedux'
+		'react':     'React',
+		'react-dom': 'ReactDOM'
 	},
 	plugins:      [ new webpack.HotModuleReplacementPlugin() ],
 	resolve:      {
 		alias:      { 'react-dom': '@hot-loader/react-dom' },
-		extensions: [ '.js', '.jsx', '.ts', '.tsx', '.css', '.less' ]
+		extensions: [ '.js', '.jsx', '.ts', '.tsx', '.css' ]
 	},
 	optimization: {
 		splitChunks: {
