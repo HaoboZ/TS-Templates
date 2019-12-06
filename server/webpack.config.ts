@@ -16,12 +16,8 @@ export default {
 	module:       {
 		rules: [
 			{
-				test:   /\.[tj]sx?$/,
+				test:   /\.[tj]s$/,
 				loader: [ 'babel-loader' ]
-			},
-			{
-				test:   /\.less$/,
-				loader: [ 'style-loader', 'css-loader', 'less-loader' ]
 			},
 			{
 				test:   /\.css$/,
@@ -29,15 +25,9 @@ export default {
 			}
 		]
 	},
-	externals:    {
-		'react':       'React',
-		'react-dom':   'ReactDOM',
-		'redux':       'Redux',
-		'react-redux': 'ReactRedux'
-	},
 	plugins:      [ new webpack.HotModuleReplacementPlugin() ],
 	resolve:      {
-		extensions: [ '.js', '.jsx', '.ts', '.tsx', '.css', '.less' ]
+		extensions: [ '.js', '.ts', '.css' ]
 	},
 	optimization: {
 		splitChunks: {
