@@ -1,10 +1,24 @@
-function component() {
-	const element = document.createElement( 'div' );
-	element.innerHTML = 'Hello World!';
-	return element;
+import Main from './main';
+
+
+function start() {
+	const game = new Phaser.Game( {
+		type:    Phaser.AUTO,
+		render:  {
+			pixelArt: true
+		},
+		scale:   {
+			mode:       Phaser.Scale.FIT,
+			parent:     'root',
+			autoCenter: Phaser.Scale.CENTER_BOTH,
+			width:      1280,
+			height:     720
+		},
+		physics: {
+			default: 'arcade'
+		},
+		scene:   Main
+	} );
 }
 
-document.addEventListener( 'DOMContentLoaded', () => {
-	const element = component();
-	document.body.appendChild( element );
-} );
+document.addEventListener( 'DOMContentLoaded', start );
