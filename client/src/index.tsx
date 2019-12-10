@@ -1,6 +1,7 @@
+import { Typography } from '@material-ui/core';
 import * as React from 'react';
 
 
 export default function Index() {
-	return <div>Hello World!</div>;
+	return <Typography>Hello World!</Typography>;
 }

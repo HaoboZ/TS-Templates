@@ -1,6 +1,6 @@
 # TS Templates
 
-Basic web starter with TypeScript and React.
+Basic web starter with TypeScript, React, and Material UI.
 
 ## Install
 
