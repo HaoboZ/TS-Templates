@@ -1,6 +1,10 @@
 {
 	"include": [
-		"src"
+		"src",
+		"app.tsx"
+	],
+	"files": [
+		"node_modules/phaser/types/phaser.d.ts"
 	],
 	/* Basic Options */
 	"compilerOptions": {
