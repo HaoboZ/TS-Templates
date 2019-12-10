@@ -1,6 +1,6 @@
 # TS Templates
 
-Basic native starter with TypeScript and expo.
+Basic native starter with TypeScript and Expo.
 
 ## Install
 
