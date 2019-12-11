@@ -1,6 +1,6 @@
 # TS Templates
 
-Basic web starter with TypeScript.
+Basic web starter with TypeScript and Phaser.
 
 ## Install
 
