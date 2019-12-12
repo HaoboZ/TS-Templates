@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { CSSProperties } from 'react';
 
 import Main from './main';
 
@@ -25,7 +24,7 @@ export function Game() {
 }
 
 export default function Index( { game } ) {
-	const [ size, setSize ] = React.useState<CSSProperties>( {
+	const [ size, setSize ] = React.useState<React.CSSProperties>( {
 		position:  'absolute',
 		width:     game.scale.width,
 		height:    game.scale.height,
@@ -35,7 +34,7 @@ export default function Index( { game } ) {
 	} );
 	
 	React.useEffect( () => {
-		game.scale.on( Phaser.Scale.Events.RESIZE, ( gameSize: Phaser.Structs.Size, baseSize, displaySize: Phaser.Structs.Size ) => {
+		game.scale.on( Phaser.Scale.Events.RESIZE, ( gameSize: Phaser.Structs.Size ) => {
 			setSize( size => ( {
 				...size,
 				width:     gameSize.width,
