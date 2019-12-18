@@ -1,10 +1,4 @@
-function component() {
-	const element = document.createElement( 'div' );
-	element.innerHTML = 'Hello World!';
-	return element;
-}
+import Main from './main';
 
-document.addEventListener( 'DOMContentLoaded', () => {
-	const element = component();
-	document.body.appendChild( element );
-} );
+
+document.addEventListener( 'DOMContentLoaded', () => new Main() );
