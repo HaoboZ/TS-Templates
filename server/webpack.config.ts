@@ -26,10 +26,6 @@ export default {
 			}
 		]
 	},
-	externals:    {
-		'react':     'React',
-		'react-dom': 'ReactDOM'
-	},
 	plugins:      [ new webpack.HotModuleReplacementPlugin() ],
 	resolve:      {
 		alias:      { 'react-dom': '@hot-loader/react-dom' },

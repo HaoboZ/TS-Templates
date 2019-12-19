@@ -1,3 +1,4 @@
+import Phaser from 'phaser';
 import * as React from 'react';
 
 import Main from './main';
