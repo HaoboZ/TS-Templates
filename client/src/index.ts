@@ -2,7 +2,7 @@ import Main from './main';
 
 
 function start() {
-	const game = new Phaser.Game( {
+	new Phaser.Game( {
 		type:    Phaser.AUTO,
 		render:  {
 			pixelArt: true
