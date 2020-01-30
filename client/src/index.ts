@@ -8,9 +8,9 @@ function start() {
 			pixelArt: true
 		},
 		scale:   {
-			mode:       Phaser.Scale.FIT,
+			mode:       Phaser.Scale.ScaleModes.FIT,
 			parent:     'root',
-			autoCenter: Phaser.Scale.CENTER_BOTH,
+			autoCenter: Phaser.Scale.Center.CENTER_BOTH,
 			width:      1280,
 			height:     720
 		},
