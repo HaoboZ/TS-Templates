@@ -1,30 +1,12 @@
 import Phaser from 'phaser';
 import * as React from 'react';
 
-import Main from './main';
+import { useGame } from './game';
 
 
-export function Game() {
-	return new Phaser.Game( {
-		type:    Phaser.AUTO,
-		render:  {
-			pixelArt: true
-		},
-		scale:   {
-			mode:       Phaser.Scale.ScaleModes.FIT,
-			parent:     'root',
-			autoCenter: Phaser.Scale.Center.CENTER_BOTH,
-			width:      1280,
-			height:     720
-		},
-		physics: {
-			default: 'arcade'
-		},
-		scene:   Main
-	} );
-}
-
-export default function Index( { game } ) {
+export default function Index() {
+	const game = useGame();
+	
 	const [ size, setSize ] = React.useState<React.CSSProperties>( {
 		position:  'absolute',
 		width:     game.scale.width,
