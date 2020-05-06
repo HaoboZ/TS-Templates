@@ -8,11 +8,11 @@ const handle = app.getRequestHandler();
 
 app.prepare().then( () => {
 	const server = express();
-
+	
 	server.get( '*', ( req, res ) => {
 		return handle( req, res );
 	} );
-
+	
 	server.listen( 80, undefined, undefined, ( err ) => {
 		if ( err ) throw err;
 		console.log( '> Ready on http://localhost' );
